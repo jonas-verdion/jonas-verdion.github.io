@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jonás Verdión</title>
+<meta name="description" content="Jonás Verdión — sitio web en construcción.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Ccircle%20cx='16'%20cy='16'%20r='9'%20fill='none'%20stroke='%2337C8B4'%20stroke-width='2'/%3E%3Cpath%20d='M16%203v7M16%2022v7M3%2016h7M22%2016h7'%20stroke='%2337C8B4'%20stroke-width='2'%20stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#f6f8fa; --card:#ffffff; --head:#f6f8fa;
+    --text:#1f2328; --muted:#59636e; --line:#d1d9e0;
+    --accent:#1f9e8c; --accent-soft:#d6f3ee;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d1117; --card:#0d1117; --head:#151b23;
+      --text:#e6edf3; --muted:#9198a1; --line:#3d444d;
+      --accent:#37c8b4; --accent-soft:#12312d;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    padding:24px;
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
+    font-size:14px; line-height:1.5;
+  }
+  a{color:var(--accent)} a:hover{color:var(--text)}
+ 
+  .box{
+    width:100%; max-width:620px;
+    background:var(--card);
+    border:1px solid var(--line); border-radius:6px; overflow:hidden;
+  }
+  .box-head{
+    display:flex; align-items:center; gap:8px;
+    padding:10px 16px; background:var(--head);
+    border-bottom:1px solid var(--line);
+    font-family:var(--mono); font-size:12px; color:var(--muted);
+  }
+  .box-head b{color:var(--text); font-weight:600}
+  .box-head .branch{
+    margin-left:auto; padding:0 8px; border:1px solid var(--line);
+    border-radius:2em; line-height:20px;
+  }
+ 
+  .box-body{padding:32px}
+ 
+  .profile{display:flex; align-items:center; gap:20px; margin-bottom:24px}
+  .avatar{
+    flex:none; width:72px; height:72px; border-radius:50%;
+    display:grid; place-items:center;
+    background:var(--accent-soft); color:var(--accent);
+    border:1px solid var(--line);
+    font-weight:600; font-size:24px; letter-spacing:.02em;
+  }
+  h1{margin:0; font-size:26px; font-weight:600; line-height:1.25}
+  .role{margin:2px 0 0; color:var(--muted); font-size:16px; font-weight:300}
+ 
+  .status{
+    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    padding:14px 0 0; border-top:1px solid var(--line);
+  }
+  .label{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:0 12px; line-height:24px; border-radius:2em;
+    border:1px solid var(--accent); color:var(--accent);
+    font-size:12px; font-weight:500;
+  }
+  .label i{width:8px; height:8px; border-radius:50%; background:currentColor}
+  .status .spacer{margin-left:auto}
+  .btn{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:6px 18px; border-radius:6px;
+    background:var(--accent); border:1px solid var(--accent); color:#fff;
+    font-size:14px; font-weight:500; text-decoration:none;
+  }
+  .btn:hover{color:#fff; filter:brightness(1.08)}
+ 
+  @media (max-width:520px){
+    .box-body{padding:20px}
+    .profile{gap:14px}
+    .avatar{width:56px; height:56px; font-size:19px}
+    h1{font-size:22px}
+    .status .spacer{display:none}
+  }
+</style>
+</head>
+<body>
+ 
+  <main class="box">
+    <div class="box-head">
+      <span>jonas-verdion /</span><b>README.md</b>
+      <span class="branch">main</span>
+    </div>
+ 
+    <div class="box-body">
+      <div class="profile">
+        <div class="avatar">JV</div>
+        <div>
+          <h1>Jonás Verdión</h1>
+          <p class="role">Especialista 3D · VR/AR</p>
+        </div>
+      </div>
+ 
+      <div class="status">
+        <span class="label"><i></i>En construcción</span>
+        <span class="spacer"></span>
+        <a class="btn" href="https://www.linkedin.com/in/jonas-verdion" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </main>
+ 
+</body>
+</html>
